@@ -15,6 +15,7 @@ public class FormController {
     @Autowired
     private FormService formService;
 
+    // Endpoint que recibe los datos del forms del frontend con un JSON mediante una petición HTTP POST.
     @PostMapping("/enviar")
     public String recibirDatos(@RequestBody FormRequest request) {
         return formService.procesarFormulario(request);

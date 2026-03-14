@@ -1,3 +1,4 @@
+// Manda los datos al API del backend usando JSON, y muestra la respuesta generada por el backend
 const API_URL = "http://localhost:8080/api/enviar";
 
 export const enviarDatosFormulario = async (datos) => {
@@ -7,6 +8,7 @@ export const enviarDatosFormulario = async (datos) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(datos)
         });
+        // Repuesta del backend
         return await response.text();
     } catch (error) {
         // Al usar 'error' aquí, el mensaje de ESLint desaparece

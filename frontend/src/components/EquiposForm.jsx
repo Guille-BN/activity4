@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { enviarDatosFormulario } from '../services/formService';
-
+// Genera un form con 5 campos para que el usuario los llene con su nombre, correo, teléfono, asunto y mensaje, lo manda al backend y muestra en pantalla la respuesta del backend
 const EquiposForm = () => {
     const [formData, setFormData] = useState({
         nombre: '', email: '', telefono: '', asunto: '', mensaje: ''
@@ -11,6 +11,7 @@ const EquiposForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+   // Mandar el form al backend
     const handleSubmit = async (e) => {
         e.preventDefault();
         const res = await enviarDatosFormulario(formData);
