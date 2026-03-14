@@ -1,5 +1,5 @@
 import React from 'react'
-import SumaForm from '../../components/SumaForm'
+import SumaForm from '../../components/EquiposForm'
 
 function About() {
     return <SumaForm />;

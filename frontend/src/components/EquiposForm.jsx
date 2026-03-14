@@ -20,7 +20,7 @@ import { sumar } from "../services/sumaService";
  * 3. Muestra el resultado de la suma
  * ---------------------------------------------------------
  */
-function SumaForm() {
+function EquiposForm() {
 
     /**
      * ---------------------------------------------------------
